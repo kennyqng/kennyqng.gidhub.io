@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>RockPaperScissors</title>
+</head>
+<body>
+    <script>
+        var userScore = 0;
+        var computerScore = 0;
+        var computerPlay;
+        function won(){
+            alert("You won!");
+        }
+        function lost(){
+            alert("You lost!")
+        }
+
+        for (var i = 1; i < 3; i++)
+        {
+            computerPlay = Math.floor(Math.random() * Math.floor(3))+1;
+            var userInput = prompt("Game: " + i + "  User: " + userScore + "  Computer: " + computerScore + "\nSelect your play: \n1. Rock 2. Paper 3. Scissors");
+            // alert ("You play " + userInput + "\nComputer plays " + computerPlay);
+            
+            if(userInput == computerPlay){
+                alert("It's a tie");
+            }
+            // rock
+            else if (userInput == 1){
+                // paper
+                if(computerPlay == 2){
+                    alert("Rock! \nComputer plays paper.");
+                    computerScore++;
+                    lost();
+                }
+                // scissors
+                if(computerPlay == 3){
+                    alert("Rock! \nComputer plays scissors.");
+                    userScore++;
+                    won();
+                }
+
+            }
+            // paper
+            else if (userInput == 2){
+                // rock
+                if(computerPlay == 1){
+                    alert("Paper! \nComputer plays rock.");
+                    userScore++;
+                    won();
+                }
+                //  scissors
+                if(computerPlay == 3)
+                {
+                    alert("Paper! \nComputer plays rock.");
+                    computerScore++;
+                    lost();
+                }
+            }
+            // scissors
+            else if (userInput == 3){
+                // rock
+                if(computerPlay == 1){
+                    alert("scissors! \nComputer plays rock.");
+                    computerScore++;
+                    lost();
+                }
+                // paper
+                if(computerScore == 2){
+                    alert("Scissors! \nComputer plays paper.");
+                    userScore++;
+                    won();
+                }
+            }
+            else{
+                alert("Invalid input.");
+                i--;
+            }
+        }
+        alet("User: " + userScore + "  Computer: " + computerScore);
+    </script>
+</body>
+</html>
