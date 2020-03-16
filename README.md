@@ -1,3 +1,7 @@
+This project is to build a personal webpage about myself. In this project, I am creating html files, css, and make us of bootstrap libraries. The main purpose of this project is to learn and demonstration responsive layout with the help of bootstrap.
+
+The following is the instruction provided.
+
 # Unit 02 CSS and Bootstrap Homework: Responsive Portfolio
 
 Responsive design ensures that web applications render well on a variety of devices and window or screen sizes. As a developer, you will likely be asked to create a mobile-first application or add responsive design to an existing application. 
