@@ -23,7 +23,6 @@ footer {
 };
 
 
-
 /* Portfolio */
 #project-wall{
   position: relative;
@@ -56,4 +55,10 @@ footer {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* contact */
+
+label{
+  color: #343a40;
 }
