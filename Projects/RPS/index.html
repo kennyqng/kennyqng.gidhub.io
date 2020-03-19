@@ -10,7 +10,10 @@
     <script>
         var userScore = 0;
         var computerScore = 0;
+
         var computerPlay;
+        var numberOfGame = 3;
+
         function won(){
             alert("You won!");
         }
@@ -18,11 +21,10 @@
             alert("You lost!")
         }
 
-        for (var i = 1; i < 3; i++)
+        for (var i = 0; i <numberOfGame; i++)
         {
             computerPlay = Math.floor(Math.random() * Math.floor(3))+1;
-            var userInput = prompt("Game: " + i + "  User: " + userScore + "  Computer: " + computerScore + "\nSelect your play: \n1. Rock 2. Paper 3. Scissors");
-            // alert ("You play " + userInput + "\nComputer plays " + computerPlay);
+            var userInput = prompt("Game: " + (i+1) + "  User: " + userScore + "  Computer: " + computerScore + "\nSelect your play: \n1. Rock 2. Paper 3. Scissors");
             
             if(userInput == computerPlay){
                 alert("It's a tie");
@@ -54,7 +56,7 @@
                 //  scissors
                 if(computerPlay == 3)
                 {
-                    alert("Paper! \nComputer plays rock.");
+                    alert("Paper! \nComputer plays scissors.");
                     computerScore++;
                     lost();
                 }
@@ -78,8 +80,9 @@
                 alert("Invalid input.");
                 i--;
             }
+            
         }
-        alet("User: " + userScore + "  Computer: " + computerScore);
+            alert("User: " + userScore + "  Computer: " + computerScore);
     </script>
 </body>
 </html>
