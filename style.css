@@ -5,7 +5,7 @@ html {
   }
 
   /* Primary Theme */
-.main {
+body {
    background-color: rgba(0, 0, 0, 0.055);
     margin-bottom: 80px;
     font-family: 'Montserrat', sans-serif;
