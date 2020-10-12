@@ -1,55 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+    rel="stylesheet"
+  />
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- redirecting to new page -->
+    <meta http-equiv="refresh" content="15; URL=https://kennyqng.github.io/portfolio/" />
     <title>Kenny Nguyen</title>
-</head>
+  </head>
 
-<body>
-
-  <nav class="navbar navbar-expand-xl navbar-dark bg-dark justify-content-center mx-0 mb-4">
-    <a class="navbar-brand justify-content-center text-white mx-0" href="index.html">Kenny Nguyen</a>
-    <div class="navbar navbar-expand-xl bg-dark navbar-light ml-md-auto" id="navbarNav">
-      <ul class="nav">
-        <li class="nav-item active">
-          <a class="nav-link text-info" href="index.html">About <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="Portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <body>
+    <nav
+      class="navbar navbar-expand-xl navbar-dark bg-dark justify-content-center mx-0 mb-4"
+    >
+      <a
+        class="navbar-brand justify-content-center text-white mx-0"
+        href="index.html"
+        >Kenny Nguyen</a
+      >
+      <div
+        class="navbar navbar-expand-xl bg-dark navbar-light ml-md-auto"
+        id="navbarNav"
+      >
+        <ul class="nav">
+          <li class="nav-item active">
+            <!-- <a class="nav-link text-info" href="index.html">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="Portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">Contact</a> -->
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <div class="container bg-white border border-light pb-4">
+      <!-- <h2 class = "text-info py-2">About Me</h2> -->
+      <h2 class="text-info py-2">Page has moved</h2>
 
-      <h2 class = "text-info py-2">About Me</h2>
-      
-      <div class = "container border border-dark mb-4"></div>
+      <div class="container border border-dark mb-4"></div>
 
-      <div class = "container">
-          <img src= "Assets/Images/img.JPG" class="float-left pr-3" alt="profile picture">
-        <small class="text-muted"> Welcome to my page. My name is Kenny Nguyen. I am currently attending The Coding Boot Camp at University of Irvine, Continuing Education. Upon completing my program, I will have experience in web development. I have worked with html, css, and Java Script. I also have used libraries such as bootstrap. My past experience includes coding language Java and C++. Please check back soon to see updates on my progress. Have a good day!
-        </small>
+      <div class="container">
+        <h5>Redirecting to <br> <a href="https://kennyqng.github.io/portfolio/"id="link">https://kennyqng.github.io/portfolio/</a> <br>in <span id="seconds">15</span> seconds</h5>
+        
+        
+        <!-- <img src= "Assets/Images/img.JPG" class="float-left pr-3" alt="profile picture">
+          <small class="text-muted"> Welcome to my page. My name is Kenny Nguyen. I am currently attending The Coding Boot Camp at University of Irvine, Continuing Education. Upon completing my program, I will have experience in web development. I have worked with html, css, and Java Script. I also have used libraries such as bootstrap. My past experience includes coding language Java and C++. Please check back soon to see updates on my progress. Have a good day!
+          </small> -->
       </div>
     </div>
 
-    <footer class = "footer bg-info" id = "footer-trim"></footer>
-    <footer class = "footer bg-dark" id = "footer">
-      <div class = "containter text-center">
-        <small class = "text-light">Copyright&copy; kenyqng.github.io</small>
+    <footer class="footer bg-info" id="footer-trim"></footer>
+    <footer class="footer bg-dark" id="footer">
+      <div class="containter text-center">
+        <small class="text-light">Copyright&copy; kenyqng.github.io</small>
       </div>
     </footer>
-    
+    <script>
+      function countDown() {
+        var timeLeft = 15;
+        timeInterval = setInterval(function () {
+          timeLeft--;
+          $("#seconds").text(timeLeft);
+          if (timeLeft < 1) {
+            clearInterval(timeInterval);
+            // alert("times up!");
+          }
+        }, 1000);
+      }
+      countDown();
+
+      // function enterText() {
+      //   var kenny = "time";
+      //   $("#seconds").text(kenny);
+      // }
+      // enterText();
+    </script>
   </body>
-    
-    </html>
+</html>
