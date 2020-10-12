@@ -69,3 +69,10 @@ footer {
 label{
   color: #343a40;
 }
+
+#seconds {
+  color: red;
+}
+#link {
+  color: #17a2b8;
+}
